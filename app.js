@@ -1,3 +1,5 @@
+// whileでグー・チョキ・パーorキャンセルボタン以外なら
+
 let user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
 while ((user_hand != "グー") && (user_hand != "チョキ") && (user_hand != "パー") && (user_hand != null)){
   alert('グー・チョキ・パーのいずれかを入力して下さい');
@@ -6,6 +8,7 @@ while ((user_hand != "グー") && (user_hand != "チョキ") && (user_hand != "�
 let js_hand = getJShand();
 let judge = winLose(user_hand, js_hand);
 
+// キャンセルボタンを押したら
 if (user_hand != null){
   alert('あなたの選んだ手は' + user_hand + 'です。\nJavaScriptの選んだ手は' + js_hand + 'です。\n結果は' + judge + 'です。');
 } else {
