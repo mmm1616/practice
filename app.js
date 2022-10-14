@@ -1,6 +1,7 @@
 // whileでグー・チョキ・パーorキャンセルボタン以外なら
 
 let user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
+// promptは入力フォームを表示する
 while ((user_hand != "グー") && (user_hand != "チョキ") && (user_hand != "パー") && (user_hand != null)){
   alert('グー・チョキ・パーのいずれかを入力して下さい');
   user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
